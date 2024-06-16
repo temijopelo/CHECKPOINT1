@@ -1,0 +1,37 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  display: inline;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+th,
+td {
+  padding: 2rem;
+}
+
+h2 {
+  font-style: italic;
+}
+
+.nameDesign {
+  color: blueviolet;
+}
+
+.bio {
+  word-spacing: 2px;
+  line-height: 1.5;
+}
+
+.cv_link {
+  color: red;
+  font-style: italic;
+  text-decoration: underline;
+}
