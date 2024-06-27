@@ -1,4 +1,8 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -34,4 +38,6 @@ h2 {
   color: red;
   font-style: italic;
   text-decoration: underline;
-}
+  display: flex;
+  flex-wrap: wrap;
+} */

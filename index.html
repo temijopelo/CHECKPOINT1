@@ -7,40 +7,74 @@
     <title>Checkpoint 1</title>
     <link rel="stylesheet" href="styles.css">
 
+    <script src="https://kit.fontawesome.com/77b49a01e6.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts  -->
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@11,74.7&family=Playwrite+AU+QLD:wght@100..400&display=swap"
         rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        levi: 'Honk',
+                        locate: 'Playwrite AU QLD',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Work</a></li>
-        </ul>
-    </nav>
+    <div class="bg-[#2F3645] text-white px-5">
+        <nav class="flex justify-between py-3 w-[80%] m-auto">
+            <h3 class="font-levi text-4xl">TEMI</h3>
+            <ul class="flex gap-5 ">
+                <li class="pb-2"><a class="hover:underline" href="#">Home</a></li>
+                <li class="pb-2"><a class="hover:underline" href="#">About</a></li>
+                <li class="pb-2"><a class="hover:underline" href="#">Work</a></li>
+                <li class="pb-2"><a class="hover:underline" href="#">Resume</a></li>
+                <li class="pb-2"><a class="hover:underline" href="#">Work</a></li>
+            </ul>
+        </nav>
+        <section class="about flex p-9 max-h-screen">
+            <div class="flex-1 p-9">
+                <p class="font-locate"><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</p>
+                <h1 class="p-5">Hello, My name is <snap class="nameDesign">Temijopelo Jeje</snap>
+                </h1>
+                <p class="bio">Temijopelo is a junior full-stack engineer, he is highly organized, hardworking and a
+                    smart
+                    individual
+                    who is very innovative and a great initiative taker, a dedicated worker with excellent
+                    communication,
+                    time management. Aiming to leverage my skills to successfully provide solutions and innovative ideas
+                    to the firm.
+                    He is a driven individual who wants to progress and always ready to learn new things, he is always
+                    conscious of timeframes on tasks and always puts in his best in any kind of project assigned to him
+                    in
+                    order to build a satisfying system for end users. He is a good team player and capable of accurately
+                    interpreting every given user requirement and producing a commendable software.</p>
+            </div>
 
-    <section class="about">
-        <h1>Hello, <br /> My name is <snap class="nameDesign">Temijopelo Jeje</snap>
-        </h1>
-
-        <p class="bio">Temijopelo is a junior full-stack engineer, he is highly organized, hardworking and a smart
-            individual
-            who is very innovative and a great initiative taker, a dedicated worker with excellent communication,
-            time management. Aiming to leverage my skills to successfully provide solutions and innovative ideas
-            to the firm.
-            He is a driven individual who wants to progress and always ready to learn new things, he is always
-            conscious of timeframes on tasks and always puts in his best in any kind of project assigned to him in
-            order to build a satisfying system for end users. He is a good team player and capable of accurately
-            interpreting every given user requirement and producing a commendable software.</p>
-
-    </section>
+            <div class="flex-1">
+                <img class="w-[80%] m-auto rounded-[90%] object-cover h-[80vh] border-8" src="img/IMG_4409_Original.JPG"
+                    alt="" srcset="">
+            </div>
+        </section>
+    </div>
 
     <hr>
 
