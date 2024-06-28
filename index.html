@@ -44,22 +44,25 @@
     <div class="bg-[#2F3645] text-white px-5">
         <nav class="flex justify-between py-3 w-[80%] m-auto">
             <h3 class="font-levi text-4xl">TEMI</h3>
-            <ul class="flex gap-5 ">
+            <ul class="hidden md:block md:flex md:text-sm md:gap-3 lg:gap-5 lg:text-base ">
                 <li class=""><a class="pb-1 hover:border-b-2" href="#">Home</a></li>
                 <li class=""><a class="pb-1 hover:border-b-2" href="#">About</a></li>
                 <li class=""><a class="pb-1 hover:border-b-2" href="#">Work</a></li>
                 <li class=""><a class="pb-1 hover:border-b-2" href="#">Resume</a></li>
                 <li class=""><a class="pb-1 hover:border-b-2" href="#">Work</a></li>
             </ul>
+            <a class="md:hidden" href="#"><i class="fa-solid fa-ellipsis"></i></a>
         </nav>
-        <section class="about flex p-9 max-h-screen">
-            <div class="flex-1 p-9">
+        <section class="about flex flex-wrap p-4 md:p-9 min-h-screen">
+            <div class="md:flex-1 md:p-9">
                 <p class="font-locate text-xs"><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</p>
-                <h1 class="py-5 text-5xl font-intro font-extrabold">Hello, I'm <snap class="block text-blue-400">
+                <h1 class="py-5 text-3xl md:text-5xl font-intro font-extrabold">Hello, I'm <snap
+                        class="block text-blue-400">
                         Temijopelo Jeje
                     </snap>
                 </h1>
-                <p class="bio pb-5">Temijopelo is a junior full-stack engineer, he is highly organized, hardworking and
+                <p class="text-sm pb-5">Temijopelo is a junior full-stack engineer, he is highly organized, hardworking
+                    and
                     a
                     smart
                     individual
@@ -73,8 +76,8 @@
                     order to build a satisfying system for end users. He is a good team player and capable of accurately
                     interpreting every given user requirement and producing a commendable software.</p>
 
-                <div class="flex gap-5">
-                    <button class="border-2 rounded-lg px-3 py-2" type="button">Download CV <i
+                <div class="flex gap-5 mb-3">
+                    <button class="text-sm border-2 rounded-lg px-3 py-2" type="button">Download CV <i
                             class="fa-solid fa-arrow-turn-down text-xs px-1"></i></button>
                     <ul class="flex gap-3">
                         <li class="p-2"><a href=""><i class="fa-brands fa-github"></i></a></li>
@@ -84,8 +87,8 @@
                 </div>
             </div>
 
-            <div class="flex-1">
-                <img class="w-[80%] m-auto rounded-[90%] object-cover object-center h-[80vh] border-8"
+            <div class="md:flex-1">
+                <img class="w-screen md:w-[80%] m-auto md:rounded-[90%] object-cover object-center h-[70vh] md:border-8"
                     src="img/IMG_4409_Original.JPG" alt="" srcset="">
             </div>
         </section>
@@ -93,16 +96,16 @@
 
     <hr>
 
-    <aside class="p-12">
+    <aside class="p-4 md:p-12">
 
         <h2 class="text-blue-400 text-center text-4xl font-intro">Blog</h2>
-        <p class="text-center p-4 w-[50%] m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga
+        <p class="text-center p-4 md:w-[50%] m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga
             vitae, laboriosam
             nostrum est vel. Cum
             deserunt recusandae nostrum eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
             corporis voluptas pariatur sapiente, atque eos tempore quae distinctio ipsa!</p>
-        <div class="flex justify-around p-5">
-            <div class="w-[30%] p-3 shadow-lg border rounded-2xl">
+        <div class="flex flex-wrap justify-around p-5 gap-3">
+            <div class="md:w-[30%] p-3 shadow-lg border rounded-2xl">
                 <div class="relative">
                     <img class="rounded-xl" src="img/pexels-cowomen-1058097-2041627.jpg" alt="">
                     <p class="absolute font-intro italic font-extralight top-0 right-6 text-white p-2 bg-blue-500">
@@ -118,7 +121,7 @@
                     <a href="#"><i class="fa-solid fa-location-arrow"></i></a>
                 </div>
             </div>
-            <div class="w-[30%] p-3 shadow-lg border rounded-2xl">
+            <div class="md:w-[30%] p-3 shadow-lg border rounded-2xl">
                 <div class="relative">
                     <img class="rounded-xl" src="img/pexels-goumbik-574071.jpg" alt="">
                     <p class="absolute font-intro italic font-extralight top-0 right-6 text-white p-2 bg-blue-500">
@@ -133,7 +136,7 @@
                     <a href="#"><i class="fa-solid fa-location-arrow"></i></a>
                 </div>
             </div>
-            <div class="w-[30%] p-3 shadow-lg border rounded-2xl">
+            <div class="md:w-[30%] p-3 shadow-lg border rounded-2xl">
                 <div class="relative">
                     <img class="rounded-xl" src="img/pexels-olly-926390.jpg" alt="">
                     <p class="absolute font-intro italic font-extralight top-0 right-6 text-white p-2 bg-blue-500">
@@ -158,7 +161,7 @@
 
         <div class="w-[75vw] m-auto text-center rounded-3xl p-9 shadow-slate-100 shadow-2xl">
             <img class="w-20 m-auto p-3" src="img/settings_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-            <h2 class="text-4xl font-bold text-blue-500 w-[50%] p-4 m-auto">
+            <h2 class="md:text-4xl font-bold text-blue-500 md:w-[50%] p-4 m-auto">
                 Let's create something amazing together
             </h2>
             <button class="p-3 bg-white text-sm rounded-xl shadow-md my-3" type="button">temijopelo.tech <i
@@ -167,10 +170,10 @@
     </aside>
 
     <footer class="bg-[#2F3645] text-white">
-        <h2 class="text-5xl font-extrabold p-5 md:w-[60%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <h2 class="md:text-5xl font-extrabold p-5 md:w-[60%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Sit, illo?</h2>
 
-        <button class="bg-white text-black py-2 px-4 rounded-xl ml-5">Connect with me</button>
+        <button class="bg-white text-black py-2 px-4 rounded-xl ml-5 text-xs">Connect with me</button>
 
         <div class="flex flex-wrap p-5 gap-5 justify-between md:w-[80%] m-auto md:p-7">
             <form action="">
@@ -186,7 +189,7 @@
             </ul>
         </div>
 
-        <p class="text-center p-4 text-sm">Copyright &copy; 2024 Jops. All rights reserved.</p>
+        <p class="text-center p-4 text-xs">Copyright &copy; 2024 Jops. All rights reserved.</p>
     </footer>
 
 
